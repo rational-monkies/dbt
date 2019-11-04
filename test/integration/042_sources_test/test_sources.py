@@ -270,6 +270,8 @@ class TestSourceFreshness(SuccessfulSourcesTest):
 
     @use_profile('snowflake')
     def test_snowflake_source_freshness(self):
+        # get those sweet, sweet uppercase column names
+        self.use_default_project({"data-paths": ["snowflake-data"]})
         self._run_source_freshness()
 
     @use_profile('redshift')
