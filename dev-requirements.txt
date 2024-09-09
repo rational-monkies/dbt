@@ -16,7 +16,7 @@ ipdb
 # isort must match what's in .pre-commit-config.yaml to be sure local env matches CI
 isort==5.13.2
 # mypy must match what's in .pre-commit-config.yaml to be sure local env matches CI
-mypy==1.4.1
+mypy==1.11.2
 pip-tools
 pre-commit
 pytest>=7.4,<8.0
